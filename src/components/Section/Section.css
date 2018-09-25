@@ -1,0 +1,57 @@
+
+.Section {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.Section > div {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center
+}
+
+.Sectiontitle {
+    flex: 2;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Sectiontitle > p {
+    font-size: var(--title);
+    color: var(--green-bg);
+    font-weight: bold;
+}
+
+.Sectiontitle > span {
+    font-size: var(--body);
+    color: var(--green-bg);
+}
+
+.Sectiontitle > .mini {
+    font-size: var(--subtext);
+}
+
+.Sectionbody {
+    flex: 3;
+}
+
+@media only screen and (max-width: 768px) {
+    .Section > div {
+        flex-direction: column;
+    }
+
+    .Sectiontitle {
+        flex: 1;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .Sectionbody {
+        flex: 1;
+    }
+}

@@ -1,0 +1,24 @@
+
+.IWT {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+.IWT > img {
+    flex: 1;
+    width: 90px;
+    display: block;
+    padding: 20px 0px;
+}
+
+.IWT > span {
+    flex: 1;
+    font-size: var(--body);
+    color: var(--green-bg);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
