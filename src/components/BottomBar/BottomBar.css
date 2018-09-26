@@ -1,0 +1,23 @@
+
+.BottomBar {
+    display: flex;
+    width: 100%;
+    background-color: var(--green-bg);
+    color: white;
+    font-size: var(--subtext);
+    padding: 32px 0;
+    justify-content: center;
+}
+
+.BottomBar > div {
+    width: 50%;
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BottomBar > div > ul {
+    list-style-type: none;
+}

@@ -12,6 +12,7 @@ import Features from './pages/Features/Features';
 import Doctors from './pages/Doctors/Doctors';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
+import BottomBar from './components/BottomBar/BottomBar';
 
 let links = [
   {src: '/', title: 'Home'},
@@ -33,6 +34,7 @@ class App extends Component {
               <Route path="/features" component={Features} exact />
               <Route path='/' component={Home} exact />
             </Switch>
+          <BottomBar />
         </div>
     );
   }

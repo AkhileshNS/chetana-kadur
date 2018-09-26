@@ -1,0 +1,50 @@
+
+.Feature {
+    width: 100%;
+    padding: 24px 0px;
+}
+
+.Feature > div {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    color: var(--green-bg);
+    margin: 0px auto;
+}
+
+.Featureimage {
+    flex: 2;
+    border-right: 1px solid var(--green-bg);
+}
+
+.Featureimage > img {
+    width: 50px;
+    height: 120px;
+    padding: 16px 0px;
+}
+
+.Featureinfo {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.Featureinfo > p {
+    font-size: var(--menu);
+    font-weight: bold;
+}
+
+.Featureinfo > span {
+    font-size: var(--subtext);
+}
+
+@media only screen and (max-width: 900px) {
+    .Featureimage {
+        flex: 3;
+    }
+    .Featureinfo {
+        flex: 7;
+    }
+}
