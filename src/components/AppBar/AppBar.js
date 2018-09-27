@@ -110,14 +110,14 @@ class AppBar extends Component {
             <div className={cssClassName+'backdrop'} style={backdropStyle} onClick={() => this.setState({open: false})}/>
             <p>Contact Us: 08267 221553,  9449923000</p>
             <div className={cssClassName+'desktop'}>
-                <img src={logo} alt="Unavailable"/>
+                <img src={logo} alt="Unavailable" onClick={() => this.openPage('/')} />
                 {links}
             </div>
             <div className={cssClassName+'mobile'}>
                 <img src={menu} alt="Unavailable" onClick={() => this.setState({open: true})}/>
                 <img src={logo} alt="Unavailable" />
             </div>
-            <img src={main} alt='Unavailable' style={{width: '100%', zIndex: '-1'}}/>
+            <img src={main} alt='Unavailable' style={{width: '100%', zIndex: '-1'}} onClick={() => this.openPage('/')} />
         </div>;
     }
 };

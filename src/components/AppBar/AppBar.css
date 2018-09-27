@@ -33,6 +33,7 @@
     height: 120px;
     margin-bottom: -80px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .AppBardesktop > div {
@@ -68,6 +69,7 @@
     margin-right: calc(50% - 46px);
     margin-bottom: -80px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .AppBarsidedrawer {
