@@ -14,14 +14,14 @@ class Contact extends Component {
         return <div className={cssClassName}>
             <p className={cssClassName+'title'}>CONTACT US</p><br />
             {nl2br('CHETANA HOSPITAL\nOpp. Venkateshwara Temple, N.H. 206,\nB.H. Road,  KADUR-577 548.')}<br />
-            <span><strong>Ph : 08267 221553,  9449923000</strong></span>
+            <span><strong>Ph : 08267 221553,  9449923000</strong></span><br /><br />
             <Maps 
                 isMarkerShown
                 googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1vGpq5aBDaq9YYV0gNeB2weTYFgUPLZY&v=3.exp&libraries=geometry,drawing,places"
-                loadingElement={<div style={{ height: `400px` }} />}
-                containerElement={<div style={{ height: `400px` }} />}
-                mapElement={<div style={{ height: `400px` }} />}
-            />
+                loadingElement={<div style={{ height: `400px`, width: '100%' }} />}
+                containerElement={<div style={{ height: `400px`, width: '100%' }} />}
+                mapElement={<div style={{ height: `400px`, width: '100%' }} />}
+            /><br />
         </div>;
     }
 }
