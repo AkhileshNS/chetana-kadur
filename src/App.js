@@ -13,6 +13,7 @@ import Doctors from './pages/Doctors/Doctors';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import BottomBar from './components/BottomBar/BottomBar';
+import Info from './pages/Info/Info';
 
 let links = [
   {src: '/', title: 'Home'},
@@ -28,6 +29,7 @@ class App extends Component {
         <div style={{width: '100%'}}>
           <AppBar links={links}/>
             <Switch>
+              <Route path="/features/:feature" component={Info} exact/>
               <Route path="/about" component={About} exact />
               <Route path="/contact" component={Contact} exact />
               <Route path="/doctors" component={Doctors} exact />

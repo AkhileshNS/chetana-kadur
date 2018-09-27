@@ -15,11 +15,16 @@
 .Featureimage {
     flex: 2;
     border-right: 1px solid var(--green-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Featureimage > img {
-    width: 50px;
-    height: 120px;
+    max-width: 50px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
     padding: 16px 0px;
 }
 
@@ -34,17 +39,35 @@
 .Featureinfo > p {
     font-size: var(--menu);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.Featureinfo > p:hover {
+    color: var(--green-dark)
 }
 
 .Featureinfo > span {
     font-size: var(--subtext);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+    .Feature > div {
+        flex-direction: column;
+    }
     .Featureimage {
         flex: 3;
+        border-right: none;
+        border-bottom: 1px solid var(--green-bg);
+    }
+    .Featureimage > img {
+        padding: 0;
+        padding-bottom: 24px;
     }
     .Featureinfo {
         flex: 7;
+        margin-left: 0px;
+        margin-top: 16px;
+        align-items: center;
+        text-align: justify;
     }
 }
