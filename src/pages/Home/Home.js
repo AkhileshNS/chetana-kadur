@@ -59,13 +59,15 @@ class Home extends Component {
                 </div>
             </Section>
             <Section titlebox={titlebox} isGreen>
-                <Maps 
-                    isMarkerShown
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1vGpq5aBDaq9YYV0gNeB2weTYFgUPLZY&v=3.exp&libraries=geometry,drawing,places"
-                    loadingElement={<div style={{ height: `400px` }} />}
-                    containerElement={<div style={{ height: `400px` }} />}
-                    mapElement={<div style={{ height: `400px` }} />}
-                />
+                <div className="HomeMaps">
+                    <Maps 
+                        isMarkerShown
+                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1vGpq5aBDaq9YYV0gNeB2weTYFgUPLZY&v=3.exp&libraries=geometry,drawing,places"
+                        loadingElement={<div style={{ height: `400px`}} />}
+                        containerElement={<div style={{ height: `400px`}} />}
+                        mapElement={<div style={{ height: `400px`}} />}
+                    />
+                </div>
             </Section>
         </div>;
     }

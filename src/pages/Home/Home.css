@@ -15,8 +15,15 @@
     text-align: justify;
 }
 
+.HomeMaps {
+    width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     .Homeinfo {
         padding: 0px 12px;
+    }
+    .HomeMaps {
+        width: 90%;
     }
 }
