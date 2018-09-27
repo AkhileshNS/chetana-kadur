@@ -1,6 +1,7 @@
 
 // External Libraries
 import React , {Component, Fragment} from 'react';
+import withRouter from 'react-router-dom/withRouter';
 
 // Internal Libraries
 import './Home.css';
@@ -24,6 +25,11 @@ import Maps from '../../Maps';
 let cssClassName = "Home";
 
 class Home extends Component {
+
+    pushAbout = () => {
+        this.props.history.push('/about');
+    }
+
     render() {
 
         let titlebox = <Fragment>
@@ -38,7 +44,7 @@ class Home extends Component {
                     Chetana Hospital initially started with department of medicine and has since gradually expanded to incorporate other specialties. To mark 25 years of excellent service in health sector a new multispecialty hospital was started in the year 2018. The state of the art new facility is a multispecialty hospital with round the clock services.<br /><br />
                     Chetana Hospital has the credit of being the only hospital in private sector in Kadur with a blood bank. It is also the first and only hospital in kadur with facilities for T.M.T and Echocardiography. Today Chetana Hospital is a referral centre for all the primary care centers in and around Kadur.<br /><br />
                 </p>
-                <button>Know More</button>
+                <button onClick={() => this.pushAbout()}>Know More</button>
             </Section>
             <Section title="SPECIALIZATION" bottom="32" isGreen>
                 <div className={cssClassName+'icons'}>
@@ -73,4 +79,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withRouter(Home);

@@ -40,7 +40,7 @@ class AppBar extends Component {
                 this.props.history.push(value);
                 this.setState({open: false});
             }
-        } 
+        }
         //The User is not currently at home and he pressed something
         else {
             if(value==='/'){

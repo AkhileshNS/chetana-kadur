@@ -9,6 +9,10 @@ import './Info.css';
 import * as List from '../../ListOfFeatures';
 
 class Info extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     
     render() {
         return <div className="Info">
