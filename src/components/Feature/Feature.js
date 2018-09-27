@@ -22,7 +22,7 @@ class Feature extends Component {
         return <div className="Feature" style={{backgroundColor: bgColor}}>
             <div>
                 <div className="Featureimage">
-                    <img src={this.props.image} alt="Unavailable" style={{maxWidth: `${this.props.width}px`}}/>
+                    <img onClick={()=>this.pushPage(this.props.url)} src={this.props.image} alt="Unavailable" style={{maxWidth: `${this.props.width}px`}}/>
                 </div>
                 <div className="Featureinfo">
                     <p onClick={() => this.pushPage(this.props.url)}>{this.props.title}</p>
