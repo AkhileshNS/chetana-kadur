@@ -33,23 +33,10 @@ class AppBar extends Component {
 
         if(this.props.history.location.pathname===value){}
         //The User is currently at home and he pressed something
-        else if(this.props.history.location.pathname==='/'){
-            if(value==='/'){
-
-            } else {
-                this.props.history.push(value);
-                this.setState({open: false});
-            }
-        }
-        //The User is not currently at home and he pressed something
         else {
-            if(value==='/'){
-                this.props.history.goBack();
-            } else {
-                this.props.history.replace(value);
-            }
-            this.setState({open: false});
+            this.props.history.push(value);
         }
+        
     }
 
     render() {

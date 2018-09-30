@@ -28,9 +28,8 @@ class Doctors extends Component {
             `}/>
             <Doctor isGreen 
             image={Doctor3} 
-            title={['Dr. Ganesh Kumar K.R','MBBSMS(OBG)','Consultant Obstetrician & Gynecologist']}
-            body={`After completing MBBS and MD in General Medicine from the prestigious J.J.M.M college in Davangere in the year 1983 he started his service in kadur soon after. He started the Chetana Hospital in the year 1993. He as previously worked as associate professor of Medicine in J.J.M.M College Davangere.\n
-            His area of special interest is Hypertension and Diabetes. Currently he is the senior most physician in the hospital with a rich experience of 35 years in the medical service to patients in and around Kadur.
+            title={['Dr. Ranjitha M.L','MBBS, MD(Dermatology)','Consultant Dermatologist']}
+            body={`After completing her MBBS from J.J.M medical college in Davangere, she went on to pursue postgraduate masters education in dermatology from the premier institute Bangalore Medical College. She has vast experience in diagnosing and managing routine dermatological problems as well as difficult skin diseases. She has numerous publications to her name and is highly motivated and enthusiastic about her work.
             `}/>
         </div>;
     }

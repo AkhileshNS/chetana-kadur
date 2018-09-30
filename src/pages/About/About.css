@@ -14,14 +14,27 @@
     margin-bottom: 16px;
 }
 
-.About > img {
-    width: 100%;
-    margin-bottom: 16px;
-}
-
 .About > span {
+    margin-top: 16px;
     font-size: var(--body);
     margin-bottom: 16px;
     text-align: justify;
+}
+
+.Aboutmainimg {
+    width: calc(100% - 4px);
+    margin-right: 4px;
+}
+
+.Aboutimg {
+    width: calc(33.33% - 4px);
+    margin-right: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Aboutimg, .Aboutmainimg {
+        width: 100%;
+        margin: 0;
+    }
 }
 
