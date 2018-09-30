@@ -8,6 +8,7 @@ import './Home.css';
 import '../../global.css';
 import Section from '../../components/Section/Section';
 import IconWithTag from '../../components/IconWithTag/IconWithTag';
+import Maps from '../../Maps';
 
 // Images
 import heart from '../../assets/heart.png';
@@ -22,7 +23,6 @@ import xray from '../../assets/xray.png';
 import pharmacy from '../../assets/pharmacy.png';
 import acrooms from '../../assets/ac.png';
 import echoandtmt from '../../assets/tmt.png';
-import Maps from '../../Maps';
 
 let cssClassName = "Home";
 

@@ -35,6 +35,7 @@ class AppBar extends Component {
         //The User is currently at home and he pressed something
         else {
             this.props.history.push(value);
+            this.setState({open: false});
         }
         
     }
