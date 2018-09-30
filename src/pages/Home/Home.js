@@ -20,6 +20,8 @@ import emergency from '../../assets/emergency.png';
 import labour from '../../assets/labour.png';
 import xray from '../../assets/xray.png';
 import pharmacy from '../../assets/pharmacy.png';
+import acrooms from '../../assets/ac.png';
+import echoandtmt from '../../assets/tmt.png';
 import Maps from '../../Maps';
 
 let cssClassName = "Home";
@@ -62,6 +64,8 @@ class Home extends Component {
                     <IconWithTag image={labour} tag="Labour" percent="100" top="31"/>
                     <IconWithTag image={xray} tag="Xray" percent="60"/>
                     <IconWithTag image={pharmacy} tag="Pharmacy" percent="100" top="23"/>
+                    <IconWithTag image={acrooms} tag="AC Rooms" top="32"/>
+                    <IconWithTag image={echoandtmt} tag="ECHO/TMT" top="32"/>
                 </div>
             </Section>
             <Section titlebox={titlebox} isGreen>
