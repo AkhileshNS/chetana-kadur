@@ -5,6 +5,7 @@
   "dependencies": {
     "google-maps-react": "^2.0.2",
     "lodash": "^4.17.11",
+    "merge": "^1.2.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-google-maps": "^9.4.5",
